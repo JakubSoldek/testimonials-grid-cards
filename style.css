@@ -1,23 +1,103 @@
+:root {
+  --barlow: "Barlow Semi Condensed", sans-serif;
+  --violet: #9900d5;
+  --grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
+
 html {
   font-size: 62.5%;
+  color: var(--light-grayish-blue);
 }
 
 body {
   font-family: var(--barlow);
   font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
 }
-:root {
-  --barlow: "Barlow Semi Condensed", sans-serif;
-  --violet: hsl(263, 55%, 52%);
-  --grayish-blue: hsl(217, 19%, 35%);
-  --blackish-blue: hsl(219, 29%, 14%);
-  --White: hsl(0, 0%, 100%);
-  --Light-gray: hsl(0, 0%, 81%);
-  --Light-grayish-blue: hsl(210, 46%, 95%);
+
+main {
+  display: grid;
+  width: 88vw;
+  margin: 6rem 0 6rem 0;
+  row-gap: 2.5rem;
+}
+.card {
+  border-radius: 1.5rem;
+  padding: 3rem 3rem 4rem 3rem;
+  box-shadow: 8rem 8rem 8rem var(--light-gray);
+}
+.card1 {
+  background-color: var(--violet);
+}
+.card2 {
+  background-color: var(--grayish-blue);
+}
+.card3 {
+  background-color: var(--white);
+  color: var(--blackish-blue);
+}
+.card4 {
+  background-color: var(--blackish-blue);
+}
+.card5 {
+  background-color: var(--white);
+
+  color: var(--blackish-blue);
+}
+.card header {
+  display: flex;
+}
+
+.card_header img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+article {
+  position: relative;
+}
+#quote {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  opacity: 0.8;
+}
+#daniel {
+  border: 2px solid rgb(186, 130, 238);
+}
+.user_name {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.4rem;
+  justify-content: center;
+  opacity: 0.9;
+}
+.user_veri {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+.card_content1 {
+  font-size: 1.96rem;
+  padding: 2rem 0;
+  opacity: 0.9;
+}
+.card_content2 {
+  opacity: 0.7;
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.2;
 }
