@@ -1,7 +1,7 @@
 Build with HTML/CSS/GRID - fully responsive. Based on frontendmentor.io project Live demo: https://jakubsoldek.github.io/testimonials-grid-cards/
 
 ![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)
-![Design preview for the Testimonials grid section coding challenge](.design/mobile-design.jpg)
+![Design mobile preview for the Testimonials grid section coding challenge](./design/mobile-design.jpg)
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
