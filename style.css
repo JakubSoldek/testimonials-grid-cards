@@ -30,7 +30,7 @@ body {
 
 main {
   display: grid;
-  width: 88vw;
+  width: clamp(327px, 88vw, 1110px);
   margin: 6rem 0 6rem 0;
   row-gap: 2.5rem;
 }
@@ -99,16 +99,20 @@ article {
   opacity: 0.7;
   font-weight: 500;
   font-size: 1.35rem;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 @media screen and (min-width: 768px) {
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 3.5rem;
-    padding: 0 5rem 0 5rem;
-    /* margin-top: 10%; */
   }
   .card1 {
     grid-column: 1/3;
